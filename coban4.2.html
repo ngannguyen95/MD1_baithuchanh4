@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính điểm trung bình</title>
+</head>
+<body>
+<h1 id="diemtrungbinh"></h1>
+<label >
+    diem ly
+</label>
+<input type="number" id="ly">
+<label >
+ diem hoa
+</label>
+<input type="number" id="hoa">
+<label >
+    diem sinh
+</label>
+<input id="sinh">
+<button onclick="diemTrungBinh()">
+    diem trung binh
+</button>
+<script>
+    function diemTrungBinh() {
+        let ly= +document.getElementById('ly').value;
+        let hoa= +document.getElementById('hoa').value;
+        let sinh= +document.getElementById('sinh').value;
+        console.log(ly+hoa)
+        let avg=(ly+hoa+sinh)/3;
+        document.getElementById('diemtrungbinh').innerText="Điểm trung bình: "+avg
+    }
+</script>
+</body>
+</html>

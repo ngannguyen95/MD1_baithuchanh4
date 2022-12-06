@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diện tch hình tròn</title>
+</head>
+<body>
+<h1>Diện tích hình tròn</h1>
+<lable> Bán kính
+    <input type="number"id="r"><br>
+</lable>
+<lable > Diện tích <input type="text" value="" id="dientich">
+</lable><br>
+<lable > Chu vi <input type="text" value="" id="chuvi">
+</lable>
+<button onclick="dientichhinhtron()"> Submit </button>
+<script>
+    function dientichhinhtron() {
+       let r= +document.getElementById('r') .value;
+       let dientich=3.14*r*r;
+        document.getElementById('dientich').value=(dientich);
+        let chuvi=2*3.14*r;
+        document.getElementById('chuvi').value=(chuvi);
+    }
+</script>
+</body>
+</html>
